@@ -4,51 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.MetasActivity">
+    tools:context=".view.AcompanhaDespesaActivity">
 
     <ImageView
-        android:id="@+id/imag_voltar3"
+        android:id="@+id/imag_voltar"
         android:layout_width="25dp"
         android:layout_height="33dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021"
         app:srcCompat="?attr/actionModeCloseDrawable"
         tools:ignore="MissingConstraints" />
 
-
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="244dp"
-        android:layout_height="28dp"
+        android:layout_width="187dp"
+        android:layout_height="37dp"
         android:gravity="center"
-        android:text="Metas e Ganhos"
-        android:textColor="@color/alizarin"
+        android:text="Suas despesas"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.027"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="83dp" />
-
-    <TextView
-        android:id="@+id/textTitulo"
-        android:layout_width="86dp"
-        android:layout_height="25dp"
-        android:gravity="center"
-        android:text="Total"
-        android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintVertical_bias="0.017" />
+
+    <TextView
+        android:id="@+id/txtdata1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 de Novembro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView1"
@@ -56,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:cardCornerRadius="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/txtdata1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -77,9 +68,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Poupança"
+                    android:text="Netflix"
                     android:textSize="20sp" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assinaturas e serviços"
+                    android:layout_marginTop="8dp" />
 
             </LinearLayout>
 
@@ -93,8 +89,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="R$ 20.000,00"
-                    android:textSize="20sp" />
+                    android:text="-32,00"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fatura de outubro"
+                    android:layout_marginTop="8dp" />
 
             </LinearLayout>
         </LinearLayout>
@@ -118,6 +121,7 @@
             android:orientation="horizontal"
             android:padding="16dp">
 
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -125,16 +129,22 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="214dp"
-                    android:layout_height="match_parent"
-                    android:text="Minha Economia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Almoço"
                     android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Alimentação" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="8dp"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="end"
                 android:orientation="vertical">
@@ -142,27 +152,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="R$ 537,00"
-                    android:textSize="20sp" />
+                    android:text="-12,40"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Pago" />
 
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/textAlerta"
-        android:layout_width="183dp"
-        android:layout_height="34dp"
-        android:gravity="center"
-        android:text="Alerta de Gastos"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
@@ -170,7 +174,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:cardCornerRadius="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/textAlerta"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -182,6 +186,8 @@
             android:orientation="horizontal"
             android:padding="16dp">
 
+            <!-- Itens à Esquerda -->
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -189,25 +195,38 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="214dp"
-                    android:layout_height="match_parent"
-                    android:text="Renda Total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Passagem Rio"
                     android:textSize="20sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="8dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="end"
-                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="R$ 6.000,00"
-                    android:textSize="20sp" />
+                    android:text="Viagem"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-640,40"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fatura de outubro"
+                    android:layout_marginTop="8dp" />
 
             </LinearLayout>
         </LinearLayout>
@@ -231,6 +250,8 @@
             android:orientation="horizontal"
             android:padding="16dp">
 
+            <!-- Itens à Esquerda -->
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -238,84 +259,40 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="214dp"
-                    android:layout_height="match_parent"
-                    android:text="Meta de Gasto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aluguel apto"
                     android:textSize="20sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="8dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="end"
-                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="R$ 4.000,00"
-                    android:textSize="20sp" />
+                    android:text="Casa"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="end">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-620,40"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pago"
+                    android:layout_marginTop="8dp" />
 
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="162dp"
-        android:layout_height="27dp"
-        android:text="40% da meta ja foi gasta"
-        android:textColor="@color/fundo"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.714" />
-
-
-    <SeekBar
-        android:id="@+id/seekBar2"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="382dp"
-        android:layout_height="39dp"
-        android:max="10"
-        android:progress="4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.765" />
-
-
-    <TextView
-        android:layout_width="192dp"
-        android:layout_height="31dp"
-        android:gravity="center"
-        android:text="Cadastrar nova meta"
-        android:textColor="@color/alizarin"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.829" />
-
-    <Button
-        android:layout_width="143dp"
-        android:layout_height="45dp"
-        android:backgroundTint="@color/alizarin"
-        android:text="Cadastrar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.533"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.909" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

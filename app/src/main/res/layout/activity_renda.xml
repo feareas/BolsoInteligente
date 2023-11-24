@@ -81,29 +81,6 @@
         app:layout_constraintVertical_bias="0.424" />
 
     <EditText
-        android:id="@+id/editTextDescricaoRenda"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:hint="Descrição/Observações"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDataRenda"
-        app:layout_constraintVertical_bias="0.6" />
-
-    <Spinner
-        android:id="@+id/spinnerFrequenciaRecebimento"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
         android:id="@+id/editTextMetodoRecebimento"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -113,20 +90,63 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.596" />
+        app:layout_constraintVertical_bias="0.524" />
 
-    <Button
-        android:id="@+id/buttonAnexarComprovanteRenda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:backgroundTint="@color/alizarin"
-        android:text="Anexar Comprovante"
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="177dp"
+        android:layout_height="27dp"
+        android:gravity="center"
+        android:text="Status da renda"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701" />
+        app:layout_constraintVertical_bias="0.609" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupRenda"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:hint="Selecione o Gênero"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:popupBackground="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:errorEnabled="true"
+        app:helperText="Selecione uma opção"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.672">
+
+        <RadioButton
+            android:id="@+id/radioRecebida"
+            android:layout_width="109dp"
+            android:layout_height="23dp"
+            android:text="Recebido"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioReceber"
+            android:layout_width="99dp"
+            android:layout_height="23dp"
+            android:text="Receber"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioAtrasado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atrasado
+"
+            android:textStyle="bold" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/buttonSalvarRenda"
@@ -138,6 +158,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.912" />
+        app:layout_constraintVertical_bias="0.773" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

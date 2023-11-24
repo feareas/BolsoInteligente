@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.MainActivity"
-    android:background="@color/fundo">
+    tools:context=".view.MainActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -14,7 +13,7 @@
         android:layout_marginBottom="553dp"
         android:gravity="center"
         android:text="BolsoInteligente"
-        android:textColor="@color/detalhes"
+        android:textColor="@color/alizarin"
         android:textSize="32sp"
         android:textStyle="bold" />
 
@@ -25,7 +24,7 @@
         android:layout_marginBottom="515dp"
         android:gravity="center"
         android:text="Das Despesas aos Investimentos"
-        android:textColor="@color/detalhes"
+        android:textColor="@color/alizarin"
         android:textSize="22sp"
         android:textStyle="bold" />
 

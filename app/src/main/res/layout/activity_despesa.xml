@@ -67,41 +67,73 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.562" />
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="177dp"
+        android:layout_height="27dp"
+        android:gravity="center"
+        android:text="Status da despesa"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
 
-    <Button
-        android:id="@+id/buttonAnexarComprovante"
+
+    <RadioGroup
+        android:id="@+id/radioGroupDespesa"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:backgroundTint="@color/alizarin"
-        android:text="Anexar Comprovante"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:hint="Selecione o Gênero"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:popupBackground="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:errorEnabled="true"
+        app:helperText="Selecione uma opção"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926" />
+        app:layout_constraintVertical_bias="0.716">
 
-    <Spinner
-        android:id="@+id/spinnerRecorrencia"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.804" />
+        <RadioButton
+            android:id="@+id/radioPago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pago"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioPagar"
+            android:layout_width="84dp"
+            android:layout_height="24dp"
+            android:text="Pagar"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioAtrasado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atrasado"
+            android:textStyle="bold" />
+    </RadioGroup>
 
     <Button
         android:id="@+id/buttonSalvarDespesa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="204dp"
+        android:layout_marginBottom="124dp"
         android:backgroundTint="@color/alizarin"
         android:text="Salvar Despesa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

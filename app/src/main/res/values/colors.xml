@@ -3,6 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="gray_500">#CFE1E6</color>
+    <color name="azul_200">#F0F8FD</color>
     <color name="cor_mapa">#FF00DAD2</color>
     <color name="cor_restaurantes">#C42252FF</color>
     <color name="cor_eventos">#B4673AB7</color>

@@ -73,6 +73,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonencontrarconta"
         android:layout_width="165dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

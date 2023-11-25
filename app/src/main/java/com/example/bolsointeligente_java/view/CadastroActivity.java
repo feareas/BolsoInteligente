@@ -153,6 +153,14 @@ public class CadastroActivity extends AppCompatActivity {
             findViewById(R.id.erroGroupWhatsapp).setVisibility(View.INVISIBLE);
         }
 
+        if (radioGroupGenero.getCheckedRadioButtonId() == -1) {
+            findViewById(R.id.erroGroupGenero).setVisibility(View.VISIBLE);
+            allFieldsValid = false;
+        } else {
+            findViewById(R.id.erroGroupGenero).setVisibility(View.INVISIBLE);
+        }
+
+
         return allFieldsValid;
     }
 
@@ -160,6 +168,4 @@ public class CadastroActivity extends AppCompatActivity {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
-
-
 }

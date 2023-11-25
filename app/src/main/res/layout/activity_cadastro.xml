@@ -74,7 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="6dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="40dp"
             android:hint="CPF"
             app:errorEnabled="true"
@@ -183,7 +183,7 @@
             android:layout_height="wrap_content"
             android:text="Selecione seu Sexo"
             android:textAlignment="center"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:textSize="15dp"
             android:textStyle="bold" />
 
@@ -230,6 +230,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:visibility="invisible"
+            android:text="Selecione uma das opções"
             android:textColor="@color/red"/>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -259,6 +260,7 @@
             android:layout_height="wrap_content"
             android:text="Deseja Receber Notificações via Email?"
             android:textAlignment="center"
+            android:layout_marginTop="20dp"
             android:textSize="15dp"
             android:textStyle="bold" />
 
@@ -267,7 +269,6 @@
             android:layout_width="wrap_content"
             android:layout_height="53dp"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
             android:hint="Aceita receber Email?"
             android:orientation="horizontal"
             android:padding="15dp"
@@ -298,6 +299,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:text="Selecione uma das opções"
             android:visibility="invisible"
             android:textColor="@color/red"/>
 
@@ -315,7 +317,6 @@
             android:layout_width="wrap_content"
             android:layout_height="53dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
             android:hint="Aceita receber SMS?"
             android:orientation="horizontal"
             android:padding="15dp"
@@ -345,6 +346,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:text="Selecione uma das opções"
             android:visibility="invisible"
             android:textColor="@color/red"/>
 
@@ -362,7 +364,6 @@
             android:layout_width="wrap_content"
             android:layout_height="53dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
             android:hint="Aceita receber Ligação?"
             android:orientation="horizontal"
             android:padding="15dp"
@@ -392,6 +393,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:text="Selecione uma das opções"
             android:visibility="invisible"
             android:textColor="@color/red"/>
 
@@ -409,7 +411,6 @@
             android:layout_width="wrap_content"
             android:layout_height="53dp"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
             android:hint="Aceita receber WhatsApp?"
             android:orientation="horizontal"
             android:padding="15dp"
@@ -439,6 +440,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:text="Selecione uma das opções"
             android:visibility="invisible"
             android:textColor="@color/red"/>
 

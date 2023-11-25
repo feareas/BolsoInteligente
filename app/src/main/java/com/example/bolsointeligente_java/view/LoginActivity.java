@@ -35,18 +35,19 @@ public class LoginActivity extends AppCompatActivity {
         loginButton.setOnClickListener(view -> {
             String email = emailEditText.getText().toString();
             String password = passwordEditText.getText().toString();
+            boolean allFieldsValid = true;
 
             if (email.isEmpty()) {
                 emailEditText.setError("Digite seu Email");
+                allFieldsValid = false;
             }
 
             if (password.isEmpty()) {
                 passwordEditText.setError("Digite sua Senha");
+                allFieldsValid = false;
             }
 
             if (!email.isEmpty() && !password.isEmpty()) {
-                // Lógica de login bem-sucedido
-                // Navegue para a tela HomeActivity
                 Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(intent);
             }
